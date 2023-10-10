@@ -22,7 +22,8 @@ const ResidentList = ({residents}) => {
                         {
                             pages.map((page)=> (
                                 <li key={page} >
-                                    <button onClick={()=> setCurrentPage(page)} className={`text-black p-2 ${page === currentPage ? 'bg-green-500 text-white' : 'bg-[#EDE288]'} rounded-full border-[#893446] border-[4px]  w-[60px] h-[60px]`}>
+                                    <button onClick={()=> setCurrentPage(page)} className={`text-[#893446] font-semibold p-2 ${page === currentPage ? 
+                                    'bg-[rgb(21_128_61/1)] text-white' : 'bg-[#EDE288]'} rounded-full border-[#893446] border-[4px]  w-[60px] h-[60px] hover:bg-[#C9C49F]`}>
                                         {page}
                                     </button>
                                 </li>
