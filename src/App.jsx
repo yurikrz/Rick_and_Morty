@@ -26,7 +26,7 @@ function App() {
   //[background:_linear-gradient(180deg,rgba(0,0,0,0.00)_13.02%,_#000_100%),_url("/bg2.webp"),_lightgray_0%_0%_/_50px_50px_repeat]
   //className='px-4 min-h-screen text-white'
   return (
-    <main className='min-h-screen text-white relative max-w-[1020px] mx-auto px-3'>
+    <main className='min-h-screen text-white relative max-w-[1020px] mx-auto px-3 min-w-[400px]'>
       <div className='fixed top-0 left-0 w-full h-full bg-[url("/bg-5.png")] bg-[cover] [background-repeat:_no-repeat] bg-[50%] z-[-1] after:fixed after:top-0 after:left-0 after:w-full after:h-full '>
       </div>
       <div className='relative z-20 h-28 sm:h-36 w-full p-5 '>
