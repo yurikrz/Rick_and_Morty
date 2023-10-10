@@ -27,7 +27,7 @@ function App() {
   //className='px-4 min-h-screen text-white'
   return (
     <main className='min-h-screen text-white relative max-w-[1020px] mx-auto px-3 min-w-[400px]'>
-      <div className='fixed top-0 left-0 w-full h-full bg-[url("/bg-5.png")] bg-[cover] [background-repeat:_no-repeat] bg-[50%] z-[-1] after:fixed after:top-0 after:left-0 after:w-full after:h-full '>
+      <div className='fixed top-0 left-0 w-full h-full [background:_linear-gradient(180deg,rgba(0,0,0,0.6)_0%,rgba(0,0,0,0.0)_100%),_url("/bg5.png"),_lightgray_0px_-770.693px_/_100%_166.7%_no-repeat] bg-[cover] [background-repeat:_no-repeat] bg-[50%] z-[-1] after:fixed after:top-0 after:left-0 after:w-full after:h-full '>
       </div>
       <div className='relative z-20 h-28 sm:h-36 w-full p-5 '>
         <img src="/title_logo.svg" alt="Logo" className={`block max-h-full m-auto ${animation && 'animate-spin'}`} />
