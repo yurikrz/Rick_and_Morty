@@ -1,10 +1,21 @@
-input[type="number"] {
-    -webkit-appearance: textfield;
-       -moz-appearance: textfield;
-            appearance: textfield;
-  }
+.residentCard{
+  transition: transform 0.3s ease-in-out;
+}  
+.residentCard:hover{
+  transform:scale(1.15);
+  cursor: pointer;
+  box-shadow: rgba(237, 226, 136, 1) 0px 5px 10px; 
+  height: calc(65%);
+}
 
-  input[type=number]::-webkit-inner-spin-button, 
-  input[type=number]::-webkit-outer-spin-button { 
-    -webkit-appearance: none;
-  }
+.residentCard:hover img{
+  box-shadow: rgba(237, 226, 136, 1) 0px 5px 10px;
+}
+
+.residentCard:hover .hidden{
+  display: grid;
+  position: absolute;
+  bottom: 0px;
+  left: 8px;
+  width: 272.07px;
+}

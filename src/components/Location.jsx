@@ -32,14 +32,13 @@ const Location = ({location, setLocation}) => {
     
 
     return (
-         
         <section>
             <form className='flex justify-center'>
                 <div className='inline-block relative'>
                     <input type="text" value={locationNameInput} placeholder='Type a Location name...' className='border-2 border-[#893446] rounded-3xl bg-[#fff] p-2 placeholder:p-2 placeholder:text-center focus:outline-none text-center text-black w-[380px] h-[40px] sm:w-[480px]' onChange={onInputChange} onFocus={onInputChange}/>
                 
-                    <ul className={`list-none p-[unset] m-[unset] absolute w-full bg-[#856888] text-white overflow-y-scroll ${locationNamesMatched.length > 6 && 'h-[150px]'}`} >
-                        {locationNamesMatched.map(locationName => (<li key={locationName.id} className='border-[1px] border-[#e9e9e9] [border-top:_unset] hover:bg-[#C1A4C4]'><button type='submit' className='[border:_unset] cursor-pointer [background:_unset] bloxk w-full text-left ' data-id={locationName.id} onClick={handleClick} >{locationName.name}</button> </li>))}
+                    <ul className={`list-none p-[unset] m-[unset] absolute w-full bg-[#856888] text-white ${locationNamesMatched.length > 6 && 'h-[150px] overflow-y-scroll'}`} >
+                        {locationNamesMatched.map(locationName => (<li key={locationName.id} className='border-[1px] border-[#e9e9e9] [border-top:_unset] hover:bg-[#C1A4C4]'><button type='submit' className='[border:_unset] cursor-pointer [background:_unset] bloxk w-full text-left ' data-id={locationName.id} onClick={handleClick}>{locationName.name}</button> </li>))}
                     </ul>
                 </div>
             </form>

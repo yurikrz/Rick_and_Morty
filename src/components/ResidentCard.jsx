@@ -14,7 +14,7 @@ const ResidentCard = ({residentEndpint}) => {
     },[])
 
     return (
-        <article className='rounded-[30px] bg-[#893446] p-2 mb-[140px] relative'>
+        <article className='rounded-[30px] bg-[#893446] p-2 mb-[140px] relative residentCard'>
             <div className='absolute w-[calc(100%-16px)]'>
                 <header className='relative bg-[#856888]'>
                     <img src={resident?.image} alt="foto" className='w-[200px] h-[200px] rounded-full border-[6px] border-[#893446] absolute left-1/2 -translate-x-1/2 top-[-150px]' />
@@ -30,10 +30,11 @@ const ResidentCard = ({residentEndpint}) => {
           
             <div className='h-full w-full rounded-3xl bg-[#856888]'>
                 <div className='h-full rounded-[24px_24px_180px_24px] bg-[#C9BEDC] font-[Nunito] mr-4'>
-                    <ul className='text-[16px] font-medium leading-normal flex items-center flex-col px-2 pt-[110px] pb-7'>
+                    <ul className='text-[16px] font-medium leading-normal flex items-center flex-col px-2 pt-[110px] pb-7 relative'>
                         <li className='w-full grid grid-cols-2 gap-1'><span className='text-[#893446]'>SPECIES </span> <span className='text-lg font-semibold'>{resident?.species}</span> </li>
                         <li className='w-full grid grid-cols-2 gap-1'><span className='text-[#893446]'>ORIGIN </span> <span className='text-lg font-semibold'>{resident?.origin.name}</span></li>
                         <li className='w-full grid grid-cols-2 gap-1'><span className='text-[#893446]'>TIMES APPEAR </span> <span className='text-lg font-semibold'>{resident?.episode.length}</span></li>
+                        <li className='w-full hidden grid-cols-2 gap-1'><span className='text-[#893446]'>GENDER </span> <span className='text-lg font-semibold'>{resident?.gender}</span></li>
                     </ul>
                 </div>
             </div>
