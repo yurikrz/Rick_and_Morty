@@ -5,7 +5,7 @@
   transform:scale(1.15);
   cursor: pointer;
   box-shadow: rgba(237, 226, 136, 1) 0px 5px 10px; 
-  height: calc(65%);
+  height: calc(68%);
 }
 
 .residentCard:hover img{

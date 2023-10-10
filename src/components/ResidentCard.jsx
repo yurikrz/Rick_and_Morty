@@ -31,10 +31,10 @@ const ResidentCard = ({residentEndpint}) => {
             <div className='h-full w-full rounded-3xl bg-[#856888]'>
                 <div className='h-full rounded-[24px_24px_180px_24px] bg-[#C9BEDC] font-[Nunito] mr-4'>
                     <ul className='text-[16px] font-medium leading-normal flex items-center flex-col px-2 pt-[110px] pb-7 relative'>
-                        <li className='w-full grid grid-cols-2 gap-1'><span className='text-[#893446]'>SPECIES </span> <span className='text-lg font-semibold'>{resident?.species}</span> </li>
-                        <li className='w-full grid grid-cols-2 gap-1'><span className='text-[#893446]'>ORIGIN </span> <span className='text-lg font-semibold'>{resident?.origin.name}</span></li>
-                        <li className='w-full grid grid-cols-2 gap-1'><span className='text-[#893446]'>TIMES APPEAR </span> <span className='text-lg font-semibold'>{resident?.episode.length}</span></li>
-                        <li className='w-full hidden grid-cols-2 gap-1'><span className='text-[#893446]'>GENDER </span> <span className='text-lg font-semibold'>{resident?.gender}</span></li>
+                        <li className='w-full grid grid-cols-2 gap-1'><span className='text-[#893446]'>SPECIES </span> <span className='text-base font-semibold'>{resident?.species}</span> </li>
+                        <li className='w-full grid grid-cols-2 gap-1'><span className='text-[#893446]'>ORIGIN </span> <span className='text-base font-semibold'>{resident?.origin.name}</span></li>
+                        <li className='w-full grid grid-cols-2 gap-1'><span className='text-[#893446]'>TIMES APPEAR </span> <span className='text-base font-semibold'>{resident?.episode.length}</span></li>
+                        <li className='w-full hidden grid-cols-2 gap-1'><span className='text-[#893446]'>GENDER </span> <span className='text-base font-semibold'>{resident?.gender}</span></li>
                     </ul>
                 </div>
             </div>
